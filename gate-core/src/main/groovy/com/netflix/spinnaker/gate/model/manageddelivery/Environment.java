@@ -23,8 +23,8 @@ import lombok.Data;
 @Data
 public class Environment {
   String name;
-  Collection<Resource> resources;
+  Collection<Map<String, Object>> resources;
   Collection<Map<String, Object>> constraints;
-  Collection<Notification> notifications;
+  Collection<Map<String, Object>> notifications;
   Map<String, Object> locations;
 }
